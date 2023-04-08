@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { Category } from "../src/model/Category";
+import { Category } from "../model/Category";
 
 const categoriesRoutes = Router();
 
@@ -10,6 +10,7 @@ categoriesRoutes.post("/", (request, response) =>{
     const { name, description } = request.body;
 
     const category =  new Category();
+    
     Object.assign(category, {
         name, 
         description,
