@@ -1,5 +1,5 @@
-import { Specification } from "../../model/Specification";
-import { ICreateCategoryDTO } from "../ICategoriesRepository";
+import { Specification } from "../model/Specification";
+import { ICreateCategoryDTO } from "./ICategoriesRepository";
 
 interface ICreateSpecificationDTO {
     name: string;
